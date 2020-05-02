@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Web Components</title>
+
+    <style>
+        h3 {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h2>Web Components</h2>
+
+    <user-card-element name="Ashwin Dinesh"></user-card-element>
+
+    <shadowed-user-card name="Jane Doe" avatar="https://randomuser.me/api/portraits/women/3.jpg"></shadowed-user-card>
+
+    <user-card name="Bruce Wayne" avatar="https://randomuser.me/api/portraits/men/9.jpg">
+        Nick name: Batman
+        <div slot="email">brucewayne@gmail.com</div>
+        <div slot="phone">+123 555 666</div>
+    </user-card>
+
+    <script src="userCardElement.js"></script>
+    <script src="shadowedUserCard.js"></script>
+    <script src="userCard.js"></script>
+</body>
+</html>
